@@ -7,7 +7,7 @@ export class UserManager {
 
   // Запрос на создание нового пользователя
   createUser(name, onSuccess, onError) {
-    fetch('http://localhost:3000/new-user', {
+    fetch('https://ahj-hw8-task1-chat-backend.onrender.com/new-user', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

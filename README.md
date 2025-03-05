@@ -1,6 +1,6 @@
 [![Build status](https://github.com/Natasha01013/ahj-hw8-task1-chat/actions/workflows/deploy.yml/badge.svg)](https://github.com/Natasha01013/ahj-hw8-task1-chat/actions/workflows/deploy.yml)
 
-[Сайт на GitHub Pages]()
+[Сайт на GitHub Pages](https://natasha01013.github.io/ahj-hw8-task1-chat/)
 
 # Домашнее задание к занятию "8. EventSource, Websockets"
 ## Задача 1. Чат  

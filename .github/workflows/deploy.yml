@@ -3,17 +3,17 @@ name: Build status
 on:
   push:
 
-  # Allows you to run this workflow manually from the Actions tab
+# Позволяет запустить этот рабочий процесс вручную на вкладке Действия
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# Устанавливает разрешения для GITHUB_TOKEN, разрешающие развертывание на страницах GitHub
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# Разрешите только одно одновременное развертывание, пропуская запуски, поставленные в очередь, между текущим запуском и последним, поставленным в очередь.
+# Однако не отменяйте текущие запуски, поскольку мы хотим, чтобы эти производственные развертывания были завершены.
 concurrency:
   group: 'pages'
   cancel-in-progress: false
@@ -47,13 +47,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: 'dist'
+
+      # Шаг 5: Деплой на GitHub Pages
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-      # Шаг 5: Деплой на GitHub Pages
-      # - name: Deploy to GitHub Pages
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   with:
-          # personal_token: ${{ secrets.PERSONAL_TOKEN }}  # Используем GITHUB_TOKEN
-          # publish_dir: ./dist  # Указываем директорию для деплоя (Webpack build)
