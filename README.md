@@ -1,5 +1,6 @@
-# CI tests  
+![Build Status](https://img.shields.io/github/workflow/status/Natasha01013/ahj-hw8-task1-chat/Build%20and%20Deploy?label=Build%20Status)
 
+[Сайт на GitHub Pages]()
 
 # Домашнее задание к занятию "8. EventSource, Websockets"
 ## Задача 1. Чат  

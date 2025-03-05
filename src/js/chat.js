@@ -5,7 +5,7 @@ import {ChatUI} from '../js/chatui.js';
 export class Chat {
     constructor() {
       this.webSocketManager = new WebSocketManager(
-        'ws://localhost:3000',
+        'ws://ahj-hw8-task1-chat-backend.onrender.com', // Протокол для WebSocket на сайте render.com
         (event) => this.onSocketMessage(event), // Обработчик сообщений
         () => this.onSocketOpen(), // Обработчик открытия соединения
         () => this.onSocketClose(), // Обработчик закрытия соединения
