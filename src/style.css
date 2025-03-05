@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+  
+.modal {
+    display: none; /* Скрываем модальное окно по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+  
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#nickname-input {
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#nickname-submit {
+    font-size: 20px;
+    background-color: rgb(243, 65, 65);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+  
+.chat-container {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    height: 80%;
+}
+  
+.user-list {
+    width: 20%;
+    padding: 10px;
+    border-right: 1px solid #ccc;
+    font-size: 20px;
+}
+  
+.chat-box {
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+  
+.messages {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+  
+.message {
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+#message-input {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 500px;
+}
+
+#send-button {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+    /* color: white;
+    border: none; */
+}
+  
+.message.own {
+    background-color: #d3f9d8;
+    text-align: right;
+}
+  
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.exit-button {
+    background-color: red;
+    color: white;
+    padding: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+}

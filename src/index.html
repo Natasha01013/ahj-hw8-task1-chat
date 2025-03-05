@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Модальное окно для ввода никнейма -->
+  <div id="nickname-modal" class="modal">
+    <div class="modal-content">
+      <h2>Выберите никнейм</h2>
+      <input type="text" id="nickname-input" placeholder="Ваш никнейм">
+      <button id="nickname-submit">Продолжить</button>
+    </div>
+  </div>
+
+  <div class="chat-container">
+    <div class="user-list">
+      <h3>Пользователи</h3>
+      <ul id="user-list"></ul>
+    </div>
+    <div class="chat-box">
+      <div class="messages" id="messages"></div>
+      <div class="input-container">
+        <input type="text" id="message-input" placeholder="Напишите здесь сообщение">
+        <button id="send-button">Отправить</button>
+      </div>
+      <button class="exit-button" id="exit-button">Выйти</button>
+    </div>
+  </div>
+</body>
+</html>
