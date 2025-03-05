@@ -1,4 +1,4 @@
-![Build Status](https://img.shields.io/github/workflow/status/Natasha01013/ahj-hw8-task1-chat/Build%20and%20Deploy?label=Build%20Status)
+[![Build status](https://github.com/Natasha01013/ahj-hw8-task1-chat/actions/workflows/deploy.yml/badge.svg)](https://github.com/Natasha01013/ahj-hw8-task1-chat/actions/workflows/deploy.yml)
 
 [Сайт на GitHub Pages]()
 
